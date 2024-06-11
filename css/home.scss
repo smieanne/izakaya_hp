@@ -1,0 +1,177 @@
+@charset "utf-8";
+@use "setting" as *;
+@use "common" as *;
+
+/*                共通
+======================================================= */
+@include common;
+
+/*                トップページ用
+======================================================= */
+/*                content
+======================================================= */
+.l-main {
+  padding: 0 0 220px;
+  @media only screen and (max-width: 767px) {
+    padding: 0 0 96px;
+  }
+}
+.l-section {
+  padding-top: 180px;
+  @media only screen and (max-width: 767px) {
+    padding-top: 100px;
+  }
+  // l-section--shop-info
+  &--shop-info {
+    padding-top: 166px;
+    @media only screen and (max-width: 767px) {
+      padding-top: 90px;
+    }
+  }
+}
+.p-section {
+  padding: 0 50px;
+  @media only screen and (max-width: 767px) {
+    padding: 0 40px;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 0 38px;
+  }
+  //.p-section--sp-wide
+  &--sp-wide {
+    @media only screen and (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  //.p-section--gallery
+  &--gallery {
+    margin-top: 166px;
+    @media only screen and (max-width: 767px) {
+      margin-top: 88px;
+    }
+  }
+  //.p-section--sns
+  &--sns {
+    margin-top: 64px;
+  }
+  //.p-section--map
+  &--map {
+    margin-top: 50px;
+  }
+}
+
+/*       message 日本海の恵み佐渡の海鮮料理でおもてなし
+======================================================= */
+
+.p-section {
+}
+
+.p-message-text {
+  margin-top: 24px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 28px;
+  }
+}
+
+/*       owner-person 店主と女将
+======================================================= */
+
+.p-owner-introduction {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 40px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    grid-gap: 38px 0;
+  }
+}
+.p-owner-introduction__img {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 300px;
+  margin: auto;
+  @media only screen and (max-width: 767px) {
+    max-width: 200px;
+  }
+}
+.p-owner-introduction__text {
+  margin-top: 48px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+
+/*       shop-info ご予約
+======================================================= */
+
+.p-sns-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 30px;
+  width: 150px;
+  padding-top: 14px;
+  @media only screen and (max-width: 480px) {
+    margin-top: 54px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .p-sns-icons__item {
+    top: 0;
+    position: relative;
+    transition: all 0.5s;
+    &:hover {
+      top: -4px;
+    }
+  }
+}
+
+.p-gmap {
+  border-style: none;
+  width: 100%;
+  height: 480px;
+}
+
+/*       reserve ご予約
+======================================================= */
+
+.p-reserve-text {
+  margin-top: 24px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 28px;
+  }
+}
+
+.p-mail-info {
+  margin-top: 46px;
+  @media only screen and (max-width: 480px) {
+    margin-top: 58px;
+  }
+}
+.p-phone-info {
+  text-align: center;
+  margin-top: 46px;
+  @media only screen and (max-width: 480px) {
+    margin-top: 50px;
+  }
+}
+.p-phone-info__txt {
+  font-weight: bold;
+  @media only screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+.p-phone-info__num {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.3em;
+  font-size: 40px;
+  @media only screen and (min-width: 768px) {
+    pointer-events: none;
+  }
+  @media only screen and (max-width: 767px) {
+    font-size: 30px;
+  }
+}
